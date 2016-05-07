@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>ColorPicker</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+      <div id="colorpicker">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+              <!--Box for Current Color-->
+              <div id="currentColor">
+                <div class="heading">Current Color</div>
+                <div id="dynacolor"></div>
+              </div>
+
+              <!--The Slider for RGB-->
+
+              <div id="rgbSlider">
+                <div class="heading">RGB Sliders</div>
+                <div id="forRed">
+                <input type="range" min="0" max="255" value="0" id="red">
+                <input type="text" id="redValue" value="0">
+                </div>
+                <div id="forGreen">
+                <input type="range" min="0" max="255" value="0" id="green">
+                <input type="text" id="greenValue" value="0">
+                </div>
+                <div id="forBlue">
+                <input type="range" min="0" max="255" value="0" id="blue">
+                <input type="text" id="blueValue" value="0">
+                </div>
+              </div>
+
+              <!-- the hue and intensity slider-->
+              <div id="hueNIntensitySlider">
+                <div class="heading">HSL Sliders</div>
+                <div id="forHue">
+                  <input type="range" min="0" max="360" id="hue" value="0">
+                  <input type="text" id="hueValue" value="0">
+                </div>
+                <div id="forIntensity">
+                  <input type="range" min="0" max="100" id="intensity" value="0">
+                  <input type="text" id="intensityValue" value="0">
+                </div>
+
+              </div>
+
+              <!--Input box for HexCode-->
+              <div id="hexcode">
+                <div class="heading">Hex Code</div>
+                <div id="hex">#<input type="text"  id="hexValue"></div>
+              </div>
+            </td>
+
+            <!--Showing the color dial-->
+            <td>
+              <div id="colorDial">
+                <ul class="circle">
+                  <li id="first">
+                    <div ></div>
+                  </li>
+                  <li id="second">
+                    <div></div>
+                  </li>
+                  <li id="third">
+                    <div></div>
+                  </li>
+                  <li id="fourth">
+                    <div></div>
+                  </li>
+                  <li id="fifth">
+                    <div></div>
+                  </li>
+                  <li id="sixth">
+                    <div></div>
+                  </li>
+                  <li id="seventh">
+                    <div></div>
+                  </li>
+                  <li id="eighth">
+                    <div></div>
+                  </li>
+                  <li id="ninth">
+                    <div></div>
+                  </li>
+                  <li id="tenth">
+                    <div></div>
+                  </li>
+                  <li id="eleventh">
+                    <div></div>
+                  </li>
+                  <li id="twelveth">
+                    <div></div>
+                  </li>
+
+                </ul>
+              </div>
+            </td>
+          <td>
+            <div id="favourite">
+              <div class="heading">Favourites</div>
+              <div id="firstcode"></div>
+              <div id="firstfav"></div>
+              <div id="secondcode"></div>
+              <div id="secondfav"></div>
+              <div id="thirdcode"></div>
+              <div id="thirdfav"></div>
+              <div id="fourthcode"></div>
+              <div id="fourthfav"></div>
+              <div id="fifthcode"></div>
+              <div id="fifthfav"></div>
+              <div id="sixthcode"></div>
+              <div id="sixthfav"></div>
+              <div id="seventhcode"></div>
+              <div id="seventhfav"></div>
+              <div id="eighthcode"></div>
+              <div id="eighthfav"></div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="points">
+      <p>1. The HSL slider implements the Hue-saturation-lightness model (HSL).</p>
+      <p>2. To add a color into favourites click on the color in the circular dial.</p>
+      <p>3. The colors in the dial and in the favourites columns will cease to exist if you refresh the page as the data is stored in the variables within the script. Refreshing the page sets the variable to empty set.</p>
+      <p>4. The hex code for the current color is generated in the hex color box.</p>
+    </div>
+    <div id="about">
+      <p>Abhishek Pratap Singh</p>
+      <p>+91-9899619698</p>
+      <p>abhishekprataps656@gmail.com</p>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
